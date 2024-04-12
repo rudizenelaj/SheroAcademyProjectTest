@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmetic Responsive Shop Website</title>
+    <link rel="icon" href="images/favicon.png">
+
+    <!-- Font awesome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Custom css file link -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+
+    <!-- Header section starts -->
+
+    <header class="header">
+
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="company logo">
+        </a>
+
+        <nav class="navbar">
+
+            <a href="index.html">Home</a>
+            <a href="order.html">Order</a>
+            <a href="#order">Go to your order</a>
+            <a href="orders.html">Orders</a>
+
+        </nav>
+
+        <div class="icons">
+
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+
+        </div>
+
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="search...">
+            <label for="search-box" class="fas fa-search"></label>
+        </div>
+
+    </header>
+
+    <!-- Header section ends -->
+
+
+    <!-- Menu section starts -->
+    <section class="menu" id="menu">
+
+        <h1 class="heading">Our <span>menu</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="images/item1.jpg" alt="Amika">
+                <h3>Amika "Hair care"</h3>
+                <div class="price">$12.99</div>
+                <button class="btn add-to-order-btn">Add to order</button>
+            </div>
+            <div class="box">
+                <img src="images/item2.jpg" alt="Clinique">
+                <h3>Clinique "Skin care"</h3>
+                <div class="price">$19.99</div>
+                <button class="btn add-to-order-btn">Add to order</button>
+            </div>
+            <div class="box">
+                <img src="images/item3.jpg" alt="Azzaro">
+                <h3>Azzaro "Fragrance"</h3>
+                <div class="price">$44.99</div>
+                <button class="btn add-to-order-btn">Add to order</button>
+            </div>
+            <div class="box">
+                <img src="images/item4.jpg" alt="OPI">
+                <h3>OPI "Nail care"</h3>
+                <div class="price">$9.99</div>
+                <button class="btn add-to-order-btn">Add to order</button>
+            </div>
+            <div class="box">
+                <img src="images/item5.jpg" alt="ColorWow">
+                <h3>ColorWow "Hair care"</h3>
+                <div class="price">$14.99</div>
+                <button class="btn add-to-order-btn">Add to order</button>
+            </div>
+            <div class="box">
+                <img src="images/item6.jpg" alt="Dyson">
+                <h3>Dyson "Hair Tools"</h3>
+                <div class="price">$579.99</div>
+                <button class="btn add-to-order-btn">Add to order</button>
+            </div>
+            <div class="box">
+                <img src="images/item7.jpg" alt="Grande Cosmetics">
+                <h3>Grande Cosmetics "Makeup"</h3>
+                <div class="price">$31.99</div>
+                <button class="btn add-to-order-btn">Add to order</button>
+            </div>
+            <div class="box">
+                <img src="images/item8.jpg" alt="Shiseido">
+                <h3>Shiseido "Skin care"</h3>
+                <div class="price">$21.99</div>
+                <button class="btn add-to-order-btn">Add to order</button>
+            </div>
+            <div class="box">
+                <img src="images/item9.jpg" alt="Lancome">
+                <h3>Lancome "3n1"</h3>
+                <div class="price">$60.99</div>
+                <button class="btn add-to-order-btn">Add to order</button>
+            </div>
+            <div class="box">
+                <img src="images/item10.jpg" alt="GHD">
+                <h3>GHD "Hair Tools"</h3>
+                <div class="price">$149.99</div>
+                <button class="btn add-to-order-btn">Add to order</button>
+            </div>
+            <div class="box">
+                <img src="images/item11.jpg" alt="Sunday Riley">
+                <h3>Sunday Riley "Skin care"</h3>
+                <div class="price">$22.99</div>
+                <button class="btn add-to-order-btn">Add to order</button>
+            </div>
+            <div class="box">
+                <img src="images/item12.jpg" alt="Kerastase">
+                <h3>Kerastase "Hair care"</h3>
+                <div class="price">$16.99</div>
+                <button class="btn add-to-order-btn">Add to order</button>
+            </div>
+        </div>
+
+    </section>
+    <!-- Menu section ends -->
+
+
+    <!-- Order section starts -->
+    <section class="order" id="order">
+        <h1 class="heading">Your <span>Order</span></h1>
+
+        <div class="order-history">
+            <h2>Order History</h2>
+            <form id="store-order-form">
+                <label for="customer-name">Your Name:</label>
+                <input type="text" id="customer-name" required>
+            </form>
+            <table id="order-table">
+                <thead>
+                    <tr>
+                        <th>Items</th>
+                        <th>Price</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="order-history-body"></tbody>
+            </table>
+            <button type="button" class="btn" id="store-order-btn">Store Order</button>
+        </div>
+    </section>
+    <!-- Order section ends -->
+    
+    <footer class="footer">
+       <div class="footer-bottom">
+         <p>&copy; 2024 Cosmetic Responsive Shop Website. All rights reserved.</p>
+       </div>
+    </footer>
+  
+
+
+    <!-- custom js file link -->
+
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>
